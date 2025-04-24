@@ -281,16 +281,15 @@ nav.navbar.bootsnav .navbar-toggle i{color: #18453B ;}
     object-fit: cover;
 }
 
-.about-list-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.about-list-icon {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 109%;
+    width: 100%;
     height: 90px;
-    background: #18453B;
+    background: #0B3D2E;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 /*.ab-list-icon */
 .about-list-icon ul {
