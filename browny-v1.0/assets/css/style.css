@@ -185,16 +185,17 @@ nav.navbar.bootsnav .navbar-toggle i{color: #18453B ;}
 /*-------------------------------------
         3.  Welcome-hero
 --------------------------------------*/
+
 .welcome-hero{
     display: flex;
     align-items: center;
     justify-content: center;
     position:relative;
-    background: url(../images/about/IMG_8511_copy.jpg) no-repeat;
-    background-size: cover;
+    background:url(../images/about/IMG_8511_copy.jpg)no-repeat;
+    background-size:cover;
     background-position: center;
     height:890px;
-}
+	
 .welcome-hero:before{
     position:absolute;
     content: " ";
