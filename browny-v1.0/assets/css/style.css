@@ -1,5 +1,5 @@
 /*==================================
-* Author        : Brianna Mattson
+* Author        : "ThemeSine"
 * Template Name :  Browny  HTML Template
 * Version       : 1.0
 ==================================== */
@@ -190,8 +190,9 @@ nav.navbar.bootsnav .navbar-toggle i{color: #18453B ;}
     align-items: center;
     justify-content: center;
     position:relative;
-    background:url(..images/about/IMG_8511 copy.jpg)no-repeat;
-    background-size:cover;
+    background-image: url("../images/about/IMG_8511 copy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     height:890px;
 }
@@ -200,7 +201,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #18453B ;}
     content: " ";
     top:0;
     left:0;
-    background:rgba(31,44,108,.65);
+    background:rgba(0,0,0,0);
     width:100%;
     height:100%;
 }
@@ -281,17 +282,16 @@ nav.navbar.bootsnav .navbar-toggle i{color: #18453B ;}
     object-fit: cover;
 }
 
-.about-list-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.about-list-icon {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 109%;
+    width: 100%;
     height: 90px;
-    background: #18453B;
+    background: #0B3D2E;
+    padding-top: 17px;
 }
+
 /*.ab-list-icon */
 .about-list-icon ul {
     display: flex;
@@ -402,7 +402,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     margin-bottom: 37px;
 }
 .progress-bar {
-   background: #2E86AB ;
+   background: #14532d ;
     border-radius: 3px;
    -webkit-transition: width 1.5s ease-in-out;
    -ms-transition: width 1.5s ease-in-out;
@@ -631,8 +631,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 /*.item img*/
 .isotope .item img{
-    width:100%;
-    height:100%;
+    width:80%;
+    height:80%;
     -webkit-transition: .5s;
     -moz-transition: .5s;
     -ms-transition: .5s;
