@@ -434,99 +434,84 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 /*-------------------------------------
         7. Experience
 -------------------------------------*/
-/* main-timeline */
-.main-timeline {
-    position: relative;
+.experience {
+    padding: 50px 0 100px;
+    border-top: 1px solid #D1D9E6;
 }
+.experience-content {padding-top: 100px;}
+.single-timeline-box {margin-bottom: 75px;}
 
-.main-timeline ul {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-/* Vertical line: start at first dot, stop at last dot */
-.main-timeline ul::before {
-    content: "";
-    position: absolute;
-    top: 0;              /* align with first item */
-    left: 45.8%;         /* center of timeline */
-    width: 2px;
-    background: #D1D9E6; /* line color */
-    z-index: -1;
-    height: calc(92.5% - 100px); 
-    /* trims bottom so it ends right at the last dot */
-}
-
-/* Ensure timeline items can anchor dots */
-.timeline-content,
+/*experience-time*/
 .experience-time {
     position: relative;
 }
+.experience-time h2 {
+    font-weight: 400;
+}
+.experience-time h3 {
+    font-size: 16px;
+    font-weight: 300;
+    color: #7F8FA6;
+    margin-top: 14px;
+    text-transform: uppercase;
+}
+/*experience-time*/
 
-/* Dot (default left side) */
-.timeline-content span > i,
-.experience-time span > i {
+/*main-timeline*/
+.main-timeline{
+    position: relative;
+}
+.main-timeline:before{
+    content: "";
+    width: 2px;
+    height: 84%;
+    background: #D1D9E6;
     position: absolute;
-    left: -14.5%;        
+    top: 1.5%;
+    left: 45.8%;
+    z-index: -1;
+}
+.main-timeline .timeline{
+    position: relative;
+}
+
+.timeline-content span>i, .experience-time span>i {
+    color: #18453B ;
+    position: absolute;
     font-size: 10px;
-    color: #18453B;      /* dot color */
-    z-index: 1;          /* above the line */
+    left: -14.5%;
+    z-index: 1;
 }
-
-/* Dot for right-side entries */
-.timeline-content.text-right span > i,
-.experience-time.text-right span > i {
-    left: auto;
-    right: -14.5%;
-}
-
-/* Typography */
 .timeline-content h4.title {
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
 }
-
 .timeline-content h5 {
     color: #7F8FA6;
     font-size: 14px;
     font-weight: 300;
     margin: 18px 0 20px;
 }
-
 .main-timeline .description {
     font-size: 14px;
     color: #7F8FA6;
 }
-
-/* Alternate layout for right-aligned content */
-.main-timeline .timeline-content.right {
+.main-timeline .timeline-content.right{
     float: right;
     text-align: left;
 }
-
-/* Remove old helper */
 .timeline-single-before:before {
-    display: none;
+    content: '';
+    top: 57px;
+    left: -3px;
+    position: absolute;
+    width: 100%;
+    height:400px;
+    border-left:15px solid #fff;
 }
 
-.experience-time-responsive {
-    display: none;
-}
-
-/* Add spacing between entries */
-.main-timeline li {
-    margin-bottom: 50px;
-}
-
-.main-timeline li:last-child {
-    margin-bottom: 0;
-}
-
-
-
+.experience-time-responsive{display: none;}
 /*-------------------------------------
         8. Profiles
 --------------------------------------*/
